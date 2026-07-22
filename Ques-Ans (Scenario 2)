@@ -1,0 +1,44 @@
+Question 1: Why would tabularisai/multilingual-sentiment-analysis be more suitable than the default sentiment analysis pipeline?
+
+Answer:
+
+The default sentiment-analysis pipeline is generally optimized for English text, so its performance on languages like Hindi and Spanish may be limited. The tabularisai/multilingual-sentiment-analysis model is trained on multiple languages, enabling it to understand and classify sentiment across different languages more accurately.
+
+For a multinational company receiving customer feedback in English, Hindi, and Spanish, this model is more suitable because it:
+
+Supports multilingual sentiment analysis.
+Provides better accuracy for non-English reviews.
+Eliminates the need to translate reviews into English before analysis.
+Delivers more consistent results across different languages.
+
+
+
+Question 2: What are the steps required to load and use this model?
+
+Answer:
+
+The steps to load and use the model are:
+
+Install the required libraries (transformers and torch).
+Import the pipeline function from the Transformers library.
+Load the multilingual sentiment analysis
+Provide one or more customer reviews as input.
+Run the pipeline to generate sentiment predictions.
+Display the predicted sentiment label and confidence score.
+
+
+
+Question 3: What factors would you consider before deploying it in production?
+
+Answer:
+
+Before deploying the model in production, I would consider the following factors:
+
+Accuracy: Evaluate the model on representative datasets for English, Hindi, Spanish, and any other target languages.
+Latency: Measure inference time to ensure it meets the application's response-time requirements.
+Model Size: Larger models require more memory and computational resources, which can increase deployment costs.
+Language Support: Confirm that all required languages and regional variations are supported.
+Scalability: Ensure the model can handle the expected volume of user requests.
+Hardware Requirements: Determine whether CPU inference is sufficient or if GPUs are needed.
+Robustness: Test the model with noisy text, slang, emojis, misspellings, and mixed-language inputs.
+Monitoring: Continuously monitor prediction quality and update the model when necessary.
