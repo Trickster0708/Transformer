@@ -1,0 +1,7 @@
+3. Why is the pipeline() abstraction useful for beginners?
+
+Answer:
+
+The pipeline() API is useful because it simplifies the process of using pretrained models. It automatically downloads the model and tokenizer, preprocesses the input text, performs inference, and converts the output into human-readable predictions. This allows beginners to perform sentiment analysis with only a few lines of code without needing to understand the underlying implementation details.
+
+Without pipeline(), users would have to manually load the tokenizer and model, tokenize the input, convert it into tensors, run inference, and decode the predictions, making the implementation significantly more complex.
